@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>{{data.name | uppercase}}</h1>
+<div mat-dialog-content>
+  <h2>Types</h2>
+  <p>{{getTypes(data.types)}}</p>
+  <h2>Heigh:</h2>
+  <p> {{data.height}} ft</p>
+  <h2>Weight: </h2>
+  <p>{{data.weight}} lb</p>
+</div>
+<div mat-dialog-actions>
+  <div mat-dialog-actions>
+    <button mat-button (click)="close()">No Thanks</button>
+    <button mat-button (click)="download(item)" cdkFocusInitial>Download data</button>
+  </div>
+</div>
